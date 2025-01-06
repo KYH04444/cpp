@@ -21,7 +21,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 
 아무것도 안하고 git status 치면 위 같은 메세지 뜸 \
-만약 수정하고 git add . 하면 stating area에 올린 파일 확인 가능
+만약 수정하고 git add . 하면 staging area에 올린 파일 확인 가능
 
     git add .
 
