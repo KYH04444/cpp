@@ -12,8 +12,14 @@
                 ./convert {command} {string}
 **********************************************************/
 
-c
-    /*
+
+
+
+#include <iostream>
+#include <string>
+#include "convert.h"
+
+/*
     int main(int argc, char* argv[]) {}
 
         argv: argument vector
@@ -27,10 +33,7 @@ c
         ls -al
         argv[0] = ls
         argv[1] = -al
-    */ 
-#include <iostream>
-#include <string>
-#include "convert.h"
+*/ 
 
 int main(int argc, char* argv[]) { 
 

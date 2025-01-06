@@ -2,7 +2,7 @@
 
 ## 일반적인 git push 순서
 
-> git add . \
+> git add  . \
 git commit -m "msg" \
 git push
 
