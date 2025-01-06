@@ -32,7 +32,7 @@ Changes to be committed: \
 	modified:   README.md \
 	renamed:    src/test.cpp -> src/cpp.cpp \
 
-'changes to be committed'가 가리키는 파일들이 staged 상태임을 확인 가능
+'changes to be committed'는 가리키는 파일들이 staged 상태임을 표시
 
     git commit -m "commit msg"
 
