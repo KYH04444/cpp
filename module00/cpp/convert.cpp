@@ -15,6 +15,50 @@
 #include <iostream>
 #include <string>
 
+bool UpperOrNot(char* Case) {
+    bool upper = false;
+    char* bagOfUpperCase[] = {"upper", 
+                              "uppeR", 
+                              "uppEr", "uppER", 
+                              "upPer", "upPeR", "upPEr", "upPER", 
+                              "uPper", "uPpeR", "uPpEr", "uPpER", "uPPer", "uPPeR", "uPPEr", "uPPER", 
+                              "Upper", "UppeR", "UppEr", "UppER", "UpPer", "UpPeR", "UpPEr", "UpPER", "UPper", "UPpeR", "UPpEr", "UPpER", "UPPer", "UPPeR", "UPPEr", "UPPER"};
+    
+    for(int i = 0; i <sizeof(bagOfUpperCase); i++) {
+        if(bagOfUpperCase[i] = Case) {
+            upper = true;
+            return upper;
+        }
+    }
+
+return upper;
+}
+
+bool LowerOrNot(char* Case) {
+    bool lower = false;
+    char* bagOfLowerCase[] = {"lower", 
+                              "loweR", 
+                              "lowEr", "lowER", 
+                              "loWer", "loWeR", "loWEr", "loWER", 
+                              "lOwer", "lOweR", "lOwEr", "lOwER", "lOWer", "lOWeR", "lOWEr", "lOWER", 
+                              "Lower", "LoweR", "LowEr", "LowER", "LoWer", "LoWeR", "LoWEr", "LoWER", "LOwer", "LOweR", "LOwEr", "LOwER", "LOWer", "LOWeR", "LOWEr", "LOWER"};
+    
+    for(int i = 0; i <sizeof(bagOfLowerCase); i++) {
+        if(bagOfLowerCase[i] = Case) {
+            lower = true;
+            return lower;
+        }
+    }
+
+return lower;
+}
+
+char UpperToLower(char* str, int size) {
+    for (int i = 0; i < size; i++) {
+        if (str[i])
+    }
+}
+
 int main(int argc, char* argv[]) { 
     // argv: argument vector
     // argc: argument count: The size of argv
@@ -30,18 +74,18 @@ int main(int argc, char* argv[]) {
     */ 
    char Case = *argv[1];
 
-   switch (Case) {
-   case 'UPPER':
-    /* code */
-    break;
-   
-   default:
-    break;
-   }    
+    if (UpperOrNot(&Case)) {
 
-}
+    }
 
-bool UpperOrLower(char Case) {
-    
-    if (Case = 'UPPER')
+    else if (LowerOrNot(&Case)) {
+
+    }
+
+    else {
+        std::cout << "Please put enter command UPPER or LOWER" <<std::endl;
+        return 0;
+    }
+
+
 }
