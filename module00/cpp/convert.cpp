@@ -3,17 +3,12 @@
 				Yonghee Kim 
 
 				module00 how to use string in cpp. 
-                You can use string class's functions(substr, append, insert, replace, erace, etc.)
-
-                    A. Use simple string class
-                    B. To convert UPPER CASE
-                    C. TO convers LOWER CASE
                 
-                ./convert {command} {string}
+                To convert UPPER CASE
+                TO convers LOWER CASE
+                
+                ./convert {command} {string} 
 **********************************************************/
-
-
-
 
 #include <iostream>
 #include <string>
@@ -37,17 +32,16 @@
 
 int main(int argc, char* argv[]) { 
 
-
    std::string CaseStr(argv[1]);
    std::string WordStr(argv[2]);
 
-    if (UpperOrNot(CaseStr)) {
-        std::string words = LowerToUpper(WordStr);
+    if (UpperOrNot(CaseStr)) { // Upper case인지 아닌지 확인 하기 위한 function
+        std::string words = LowerToUpper(WordStr); // str을 읽어 이를 ASCII code 계산하여 Lower to Upper
         std::cout << words << std::endl;
     }
 
-    else if (LowerOrNot(CaseStr)) {
-        std::string words = UpperToLower(WordStr);
+    else if (LowerOrNot(CaseStr)) { // Lower case인지 아닌지 확인 하기 위한 function
+        std::string words = UpperToLower(WordStr); // str을 읽어 이를 ASCII code 계산하여 Upper to Lower 
         std::cout << words << std::endl;        
 
     }

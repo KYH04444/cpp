@@ -2,8 +2,8 @@
 
 ## 일반적인 git push 순서
 
-> git add  . \
-git commit -m "msg" \
+> git add   . \
+git commit  -m "msg" \
 git push
 
     git add .
@@ -39,7 +39,7 @@ Changes to be committed: \
 stage에 올린 애들은 위 명령어로 commit하면 깃허브에 바로 올라갈 준비 끝남 \
 나중에 msg를 확인해서 이전 버전으로 되돌아 갈 때 중요한 역할을 하므로 MSG 잘 적자
 
-    git push origin master
+    git push origin master (git push)
 
 origit은 처음 git 설정할 때 현재 remote repository에 붙여준 이름
 
