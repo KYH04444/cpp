@@ -137,6 +137,5 @@ CMakeFiles/convert.dir/cpp/convert.cpp.o: \
  /usr/include/c++/9/bits/locale_facets.tcc \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
- /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/stdlib.h \
- /usr/include/c++/9/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/9/bits/istream.tcc \
  /home/kim/drone_ws/src/cpp/module00/include/convert.h
