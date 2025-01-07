@@ -129,6 +129,19 @@ convert/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/build
 .PHONY : convert/fast
 
+#=============================================================================
+# Target rules for targets named phoneBook
+
+# Build rule for target.
+phoneBook: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phoneBook
+.PHONY : phoneBook
+
+# fast build rule for target.
+phoneBook/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/build
+.PHONY : phoneBook/fast
+
 cpp/convert.o: cpp/convert.cpp.o
 .PHONY : cpp/convert.o
 
@@ -153,6 +166,30 @@ cpp/convert.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/cpp/convert.cpp.s
 .PHONY : cpp/convert.cpp.s
 
+cpp/phoneBook.o: cpp/phoneBook.cpp.o
+.PHONY : cpp/phoneBook.o
+
+# target to build an object file
+cpp/phoneBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/cpp/phoneBook.cpp.o
+.PHONY : cpp/phoneBook.cpp.o
+
+cpp/phoneBook.i: cpp/phoneBook.cpp.i
+.PHONY : cpp/phoneBook.i
+
+# target to preprocess a source file
+cpp/phoneBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/cpp/phoneBook.cpp.i
+.PHONY : cpp/phoneBook.cpp.i
+
+cpp/phoneBook.s: cpp/phoneBook.cpp.s
+.PHONY : cpp/phoneBook.s
+
+# target to generate assembly for a file
+cpp/phoneBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/cpp/phoneBook.cpp.s
+.PHONY : cpp/phoneBook.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... convert"
+	@echo "... phoneBook"
 	@echo "... cpp/convert.o"
 	@echo "... cpp/convert.i"
 	@echo "... cpp/convert.s"
+	@echo "... cpp/phoneBook.o"
+	@echo "... cpp/phoneBook.i"
+	@echo "... cpp/phoneBook.s"
 .PHONY : help
 
 

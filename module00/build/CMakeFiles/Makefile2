@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/kim/drone_ws/src/cpp/module00/build
 
 # The main recursive "all" target.
 all: CMakeFiles/convert.dir/all
+all: CMakeFiles/phoneBook.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/convert.dir/clean
+clean: CMakeFiles/phoneBook.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -99,6 +101,32 @@ convert: CMakeFiles/convert.dir/rule
 CMakeFiles/convert.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/convert.dir/build.make CMakeFiles/convert.dir/clean
 .PHONY : CMakeFiles/convert.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/phoneBook.dir
+
+# All Build rule for target.
+CMakeFiles/phoneBook.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/kim/drone_ws/src/cpp/module00/build/CMakeFiles --progress-num=3,4 "Built target phoneBook"
+.PHONY : CMakeFiles/phoneBook.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/phoneBook.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module00/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/phoneBook.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module00/build/CMakeFiles 0
+.PHONY : CMakeFiles/phoneBook.dir/rule
+
+# Convenience name for target.
+phoneBook: CMakeFiles/phoneBook.dir/rule
+.PHONY : phoneBook
+
+# clean rule for target.
+CMakeFiles/phoneBook.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/phoneBook.dir/build.make CMakeFiles/phoneBook.dir/clean
+.PHONY : CMakeFiles/phoneBook.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
