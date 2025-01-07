@@ -48,7 +48,6 @@ int main(int argc, char* argv[]) {
 
     else {
         std::cout << "Please put enter command UPPER or LOWER" <<std::endl;
-        return 0;
     }
 
 }

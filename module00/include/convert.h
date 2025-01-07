@@ -22,7 +22,7 @@ bool LowerOrNot(std::string Case) {
                                       "DOwn", "DOwN", "DOWn","DOWN", "lower", "loweR", "lowEr", "lowER", "loWer", "loWeR", "loWEr", "loWER", "lOwer", 
                                       "lOweR", "lOwEr", "lOwER", "lOWer", "lOWeR", "lOWEr", "lOWER", "Lower", "LoweR", "LowEr", "LowER",
                                       "LoWer", "LoWeR", "LoWEr", "LoWER", "LOwer", "LOweR", "LOwEr", "LOwER", "LOWer", "LOWeR", "LOWEr", "LOWER"};
-    
+
     for(int i = 0; i < 48; i++) {
         if (bagOfLowerCase[i] == Case) {
             lower = true;
