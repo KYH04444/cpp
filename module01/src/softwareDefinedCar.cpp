@@ -1,9 +1,15 @@
+/********************************************************************
+				2025.01.08
+				Yonghee Kim 
+
+				module01 Using OCF, Make software defined car model
+*********************************************************************/
+
 #include <iostream>
 #include <cstring>
 #include "softwareDefinedCar.h"
 
 int main(int argc, char* argv[]) {
-
     int AutoDriveLevel[3] = {2, 3, 4};
     int EelectricLecel[3] = {50, 70, 100};
     bool Connectivity[3] = {false, true, true};

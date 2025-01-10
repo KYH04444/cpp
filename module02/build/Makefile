@@ -57,10 +57,10 @@ RM = /home/kim/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kim/drone_ws/src/cpp/module01
+CMAKE_SOURCE_DIR = /home/kim/drone_ws/src/cpp/module02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kim/drone_ws/src/cpp/module01/build
+CMAKE_BINARY_DIR = /home/kim/drone_ws/src/cpp/module02/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module01/build/CMakeFiles /home/kim/drone_ws/src/cpp/module01/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module02/build/CMakeFiles /home/kim/drone_ws/src/cpp/module02/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kim/drone_ws/src/cpp/module02/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,78 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named car
+# Target rules for targets named oopCar
 
 # Build rule for target.
-car: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 car
-.PHONY : car
+oopCar: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 oopCar
+.PHONY : oopCar
 
 # fast build rule for target.
-car/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.dir/build.make CMakeFiles/car.dir/build
-.PHONY : car/fast
+oopCar/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oopCar.dir/build.make CMakeFiles/oopCar.dir/build
+.PHONY : oopCar/fast
 
-#=============================================================================
-# Target rules for targets named sdv
-
-# Build rule for target.
-sdv: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdv
-.PHONY : sdv
-
-# fast build rule for target.
-sdv/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdv.dir/build.make CMakeFiles/sdv.dir/build
-.PHONY : sdv/fast
-
-src/car.o: src/car.cpp.o
-.PHONY : src/car.o
+src/Exercise01.o: src/Exercise01.cpp.o
+.PHONY : src/Exercise01.o
 
 # target to build an object file
-src/car.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.dir/build.make CMakeFiles/car.dir/src/car.cpp.o
-.PHONY : src/car.cpp.o
+src/Exercise01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oopCar.dir/build.make CMakeFiles/oopCar.dir/src/Exercise01.cpp.o
+.PHONY : src/Exercise01.cpp.o
 
-src/car.i: src/car.cpp.i
-.PHONY : src/car.i
-
-# target to preprocess a source file
-src/car.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.dir/build.make CMakeFiles/car.dir/src/car.cpp.i
-.PHONY : src/car.cpp.i
-
-src/car.s: src/car.cpp.s
-.PHONY : src/car.s
-
-# target to generate assembly for a file
-src/car.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/car.dir/build.make CMakeFiles/car.dir/src/car.cpp.s
-.PHONY : src/car.cpp.s
-
-src/softwareDefinedCar.o: src/softwareDefinedCar.cpp.o
-.PHONY : src/softwareDefinedCar.o
-
-# target to build an object file
-src/softwareDefinedCar.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdv.dir/build.make CMakeFiles/sdv.dir/src/softwareDefinedCar.cpp.o
-.PHONY : src/softwareDefinedCar.cpp.o
-
-src/softwareDefinedCar.i: src/softwareDefinedCar.cpp.i
-.PHONY : src/softwareDefinedCar.i
+src/Exercise01.i: src/Exercise01.cpp.i
+.PHONY : src/Exercise01.i
 
 # target to preprocess a source file
-src/softwareDefinedCar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdv.dir/build.make CMakeFiles/sdv.dir/src/softwareDefinedCar.cpp.i
-.PHONY : src/softwareDefinedCar.cpp.i
+src/Exercise01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oopCar.dir/build.make CMakeFiles/oopCar.dir/src/Exercise01.cpp.i
+.PHONY : src/Exercise01.cpp.i
 
-src/softwareDefinedCar.s: src/softwareDefinedCar.cpp.s
-.PHONY : src/softwareDefinedCar.s
+src/Exercise01.s: src/Exercise01.cpp.s
+.PHONY : src/Exercise01.s
 
 # target to generate assembly for a file
-src/softwareDefinedCar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdv.dir/build.make CMakeFiles/sdv.dir/src/softwareDefinedCar.cpp.s
-.PHONY : src/softwareDefinedCar.cpp.s
+src/Exercise01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oopCar.dir/build.make CMakeFiles/oopCar.dir/src/Exercise01.cpp.s
+.PHONY : src/Exercise01.cpp.s
 
 # Help Target
 help:
@@ -198,14 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... car"
-	@echo "... sdv"
-	@echo "... src/car.o"
-	@echo "... src/car.i"
-	@echo "... src/car.s"
-	@echo "... src/softwareDefinedCar.o"
-	@echo "... src/softwareDefinedCar.i"
-	@echo "... src/softwareDefinedCar.s"
+	@echo "... oopCar"
+	@echo "... src/Exercise01.o"
+	@echo "... src/Exercise01.i"
+	@echo "... src/Exercise01.s"
 .PHONY : help
 
 

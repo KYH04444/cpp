@@ -1,3 +1,12 @@
+/*********************************************************
+				2025.01.07
+				Yonghee Kim 
+
+				module00 how to use string in cpp. 
+                
+                Make phon book
+**********************************************************/
+
 #include <iostream>
 #include <cstring>
 #include <vector>
@@ -10,7 +19,6 @@ int main(int argc, char* argv[]) {
     std::string Name;
     double PhoneNumber;
     std::string Nickname;
-    
     std::cout << "---------------------------Phone Book---------------------------" << std::endl;
 
     while (optionNumber != 5)

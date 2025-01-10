@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/car.dir/src/sportsCar.cpp.o -o car
+/usr/bin/c++ CMakeFiles/car.dir/src/car.cpp.o -o car

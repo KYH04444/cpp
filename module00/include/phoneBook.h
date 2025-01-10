@@ -18,7 +18,6 @@ public:
 };
 
 class PhoneBook {
-
 private:
     std::vector<People> list; // People class형태의 vector 생성
     std::vector<People> BookMark;

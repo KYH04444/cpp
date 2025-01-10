@@ -3,6 +3,7 @@
 
 CMakeFiles/sdv.dir/src/softwareDefinedCar.cpp.o
  /home/kim/drone_ws/src/cpp/module01/src/softwareDefinedCar.cpp
+ /home/kim/drone_ws/src/cpp/module01/include/softwareDefinedCar.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

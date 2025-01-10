@@ -17,7 +17,7 @@ public:
         Model = new std::string(model);
         Year = year;
     } 
-    
+
     softwareDefinedCar(const softwareDefinedCar& other) {
         Make = new std::string(*other.Make);
         Model = new std::string(*other.Model);
@@ -39,7 +39,7 @@ public:
 
     virtual void printOtaInfo() const { 
     /*
-    
+
     virtual로 선언해서 다른 상속 cls에서 이를 수정할 수 있음 
     상속받은 cls의 printInfo가 overriding없이 적고 void printInfo {}로 const없이 작성해서 형식이 틀리다면 컴파일 에러는 안뜨지만 
     수정된 printInfo가 아닌 부모 cls printInfo를 따름 이 virtual은 runtime시 확인하는데 이를 overriding을 써주면 형태가 다르면 다르다고 알려줌
@@ -91,11 +91,9 @@ public:
         delete Model;
     }
 
-
-
 };
 
-class softwareDefinedCarLidar : public softwareDefinedCar { //상속시 public 명시하지 않으면 멤버들이 private으로 들어감 부모 cls로 자식 cls 접근하려면 public으로 ㄱㄱ
+class softwareDefinedCarLidar : public softwareDefinedCar { // 상속시 public 명시하지 않으면 멤버들이 private으로 들어감 부모 cls로 자식 cls 접근하려면 public으로 ㄱㄱ
 public:
     std::string* Lidar;
 
@@ -111,6 +109,7 @@ public:
         if (this == &other) {
             return *this;
         }
+
         softwareDefinedCar::operator=(other);
         Lidar = other.Lidar;
 
