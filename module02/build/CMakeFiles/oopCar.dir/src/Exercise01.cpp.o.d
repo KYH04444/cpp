@@ -158,4 +158,5 @@ CMakeFiles/oopCar.dir/src/Exercise01.cpp.o: \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
- /usr/include/c++/9/pstl/execution_defs.h
+ /usr/include/c++/9/pstl/execution_defs.h \
+ /home/kim/drone_ws/src/cpp/module02/include/carPart.h
