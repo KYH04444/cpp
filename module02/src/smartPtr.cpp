@@ -12,11 +12,10 @@ Smart pointer 4가지
     std::shared_ptr
     std::weak_ptr
 
-
 std::unique_ptr // 유일한 포인터
     std::unique_ptr<int> ptr1(new int(5));
     std::unique_ptr<int> ptr2 = ptr1; // Error 
-
+    
     std::unique_ptr<int> ptr1(new int(5));
     std::unique_ptr<int> ptr2 = std::move(ptr1); // 다음과 같이 소유권을 이전, unique_ptr이 자원의 유일한 소유자임을 보장
 
@@ -29,7 +28,7 @@ std::shared_ptr // 공유 소유권 제공하는 포인터 - 인스턴스가 동
     자주 쓰이는 문법 std::make_shared, std::use_count()
     std::shared_ptr<MyClass> sp = std::make_shared<MyClass>();
     sp->ptr = sp;
-
+    
     std::use_count check하고 0되면 메모리 자동으로 해제
 
 std::weak_ptr // 약한 참조 제공 - 스마트포인터가 순환 참조와 같은 문제가 발생할 때 도움을 줌
@@ -69,4 +68,3 @@ std::weak_ptr // 약한 참조 제공 - 스마트포인터가 순환 참조와 �
     자주 쓰이는 문법 std::lock(), std::expired()
 */
 
-s
