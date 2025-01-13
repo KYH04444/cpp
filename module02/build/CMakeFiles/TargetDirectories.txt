@@ -1,3 +1,4 @@
 /home/kim/drone_ws/src/cpp/module02/build/CMakeFiles/oopCar.dir
+/home/kim/drone_ws/src/cpp/module02/build/CMakeFiles/smtPtr.dir
 /home/kim/drone_ws/src/cpp/module02/build/CMakeFiles/edit_cache.dir
 /home/kim/drone_ws/src/cpp/module02/build/CMakeFiles/rebuild_cache.dir
