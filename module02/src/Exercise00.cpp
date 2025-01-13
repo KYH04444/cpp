@@ -102,55 +102,60 @@ int main(int argc, char* argv[]) {
 	}
 
 	else if(!strcmp(argv[1],"weak")) {
-		
-		class A {
+		class sharedPtrClsB;
+
+		class sharedPtrClsA {
 		public:
-			std::string* data;
-
-			A(std::string a) {
-				// sharedPtr1 = a;
-				data = new std::string(a);
-			}
-
-			A& operator=(const A& other) {
-				if (this == &other) {
-					return *this;
-				}
-
-				delete data;
-				data = new std::string(*other.data);
-				
-			}
+			std::shared_ptr<sharedPtrClsB> b_ptr;
 		};
 
-		class B {
-		public:
-			std::string sharedPtr2;
-
-			B(std::string b) {
-				sharedPtr2 = b;
-			}
-			std::string print() {
-				return sharedPtr2;
-			}			
+		class sharedPtrClsB {
+		public:			
+			std::shared_ptr<sharedPtrClsA> a_ptr;
 		};
+
+
+
+		std::shared_ptr<sharedPtrClsA> a(new sharedPtrClsA());
+		std::shared_ptr<sharedPtrClsB> b(new sharedPtrClsB());
 		
-		std::shared_ptr<A> a(new A("No.1 pointer"));
-		
-		std::shared_ptr<B> b(new B("No.2 pointer"));
+		std::cout << "-------------Before weak_ptr-------------\n";
+		std::cout << "Shared pointer 1: " << a << std::endl;
+		std::cout << "Shared pointer 2: " << b << std::endl;
+		std::cout << "Pointer a count: " << a.use_count() << std::endl;		
+		std::cout << "Pointer b count: " << b.use_count() << std::endl;		
+		a->b_ptr = b;
+		b->a_ptr = a;	
 
 		std::cout << "Shared pointer 1: " << a << std::endl;
-		std::cout << "Shared pointer 2: " <<b << std::endl;
-		a->sharedPtr1 = b;
-		b->sharedPtr2 = a;	
+		std::cout << "Shared pointer 2: " << b << std::endl;
 
-		// std::shared_ptr<std::string> sharedPtr1 (new std::string("No.1 pointer"));
-		std::cout << "Shared pointer 1: " << a << std::endl;
+		std::cout << "Pointer a count: " << a.use_count() << std::endl;		
+		std::cout << "Pointer b count: " << b.use_count() << std::endl;		
 
-		// std::shared_ptr<std::string> sharedPtr2 (new std::string("No.2 pointer"));
-		std::cout << "Shared pointer 2: " <<b << std::endl;
 
+		class sharedPtrClsC {
+		public:			
+			std::weak_ptr<sharedPtrClsA> a_ptr;
+		};
+
+		std::shared_ptr<sharedPtrClsA> c(new sharedPtrClsA());
+		std::shared_ptr<sharedPtrClsC> d(new sharedPtrClsC());
 		
+		std::cout << "-------------after weak_ptr-------------\n";
+		std::cout << "Shared pointer 1: " << c << std::endl;
+		std::cout << "Shared pointer 2: " << d << std::endl;
+		std::cout << "Pointer a count: " << c.use_count() << std::endl;		
+		std::cout << "Pointer b count: " << d.use_count() << std::endl;		
+		c->b_ptr = b;
+		d->a_ptr = a;	
+
+		std::cout << "Shared pointer 1: " << c << std::endl;
+		std::cout << "Shared pointer 2: " << d << std::endl;
+		
+		std::cout << "Pointer a count: " << c.use_count() << std::endl;		
+		std::cout << "Pointer b count: " << d.use_count() << std::endl;		
+
 	}
 
 	return 0;
