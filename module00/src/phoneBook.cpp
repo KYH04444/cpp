@@ -4,7 +4,7 @@
 
 				module00 how to use string in cpp. 
                 
-                Make phon book
+                Make phone book
 **********************************************************/
 
 #include <iostream>
